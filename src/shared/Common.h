@@ -217,7 +217,7 @@ enum LocaleConstant
 
     // no official vanilla clients for these exist
     // the locale strings first appear in the binary in 2.2.0
-    LOCALE_esMX = 7, // unused text column exists for this index in dbc files
+    LOCALE_ptBR = 7, // unused text column exists for this index in dbc files
     LOCALE_ruRU = 8  // did not exist in any way, but has fan made client now (english texts replaced with russian)
 };
 
@@ -231,7 +231,7 @@ enum DBLocaleConstant : int
     DB_LOCALE_zhCN = 3,
     DB_LOCALE_zhTW = 4,
     DB_LOCALE_esES = 5,
-    DB_LOCALE_esMX = 6,
+    DB_LOCALE_ptBR = 6,
     DB_LOCALE_ruRU = 7
 };
 
