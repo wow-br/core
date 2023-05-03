@@ -179,7 +179,7 @@ void PInfoHandler::HandleResponse(WorldSession* session, PInfoData* data)
     if (!className)
         className = "";
 
-    if (data->m_locale > LOCALE_esMX)
+    if (data->m_locale > LOCALE_ptBR)
         data->m_locale = LOCALE_enUS;
     ChatHandler cHandler(session);
 
