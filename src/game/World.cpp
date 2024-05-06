@@ -475,7 +475,7 @@ void World::LoadConfigSettings(bool reload)
 
     // Read the player limit and the Message of the day from the config file
     SetPlayerLimit(sConfig.GetIntDefault("PlayerLimit", DEFAULT_PLAYER_LIMIT), true);
-    SetMotd(sConfig.GetStringDefault("Motd", "Welcome to the Massive Network Game Object Server.") + std::string("\n") + std::string(GetPatchName()) + std::string(" is now live!"));
+    SetMotd(sConfig.GetStringDefault("Motd", "Welcome to the Massive Network Game Object Server.") + std::string("\n") + std::string(GetPatchName()) + std::string(" está no ar!"));
 
     // Read all rates from the config file
     setConfigPos(CONFIG_FLOAT_RATE_HEALTH,               "Rate.Health", 1.0f);
@@ -1264,27 +1264,27 @@ char const* World::GetPatchName() const
     switch(GetWowPatch())
     {
         case 0:
-            return "Patch 1.2: Mysteries of Maraudon";
+            return "Patch 1.2: Mistérios de Maraudon";
         case 1:
-            return "Patch 1.3: Ruins of the Dire Maul";
+            return "Patch 1.3: Ruínas do Gládio Cruel";
         case 2:
-            return "Patch 1.4: The Call to War";
+            return "Patch 1.4: Chamado à Guerra";
         case 3:
-            return "Patch 1.5: Battlegrounds";
+            return "Patch 1.5: Campos de Batalha";
         case 4:
-            return "Patch 1.6: Assault on Blackwing Lair";
+            return "Patch 1.6: Investida ao Covil do Asa Negra";
         case 5:
-            return "Patch 1.7: Rise of the Blood God";
+            return "Patch 1.7: Ascensão do Deus Sanguinário";
         case 6:
-            return "Patch 1.8: Dragons of Nightmare";
+            return "Patch 1.8: Dragões do Pesadelo";
         case 7:
-            return "Patch 1.9: The Gates of Ahn'Qiraj";
+            return "Patch 1.9: Os Portões de Ahn'Qiraj";
         case 8:
-            return "Patch 1.10: Storms of Azeroth";
+            return "Patch 1.10: Tempestades de Azeroth";
         case 9:
-            return "Patch 1.11: Shadow of the Necropolis";
+            return "Patch 1.11: Sombra da Necrópole";
         case 10:
-            return "Patch 1.12: Drums of War";
+            return "Patch 1.12: Tambores de Guerra";
     }
 
     return "Invalid Patch!";
