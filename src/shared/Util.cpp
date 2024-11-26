@@ -208,9 +208,9 @@ std::string secsToTimeString(time_t timeInSecs, bool shortText, bool hoursOnly)
         if (shortText)
             ss << "d";
         else if (days == 1)
-            ss << " Day ";
+            ss << " Dia ";
         else
-            ss << " Days ";
+            ss << " Dias ";
     }
     if(hours || hoursOnly)
     {
@@ -218,9 +218,9 @@ std::string secsToTimeString(time_t timeInSecs, bool shortText, bool hoursOnly)
         if (shortText)
             ss << "h";
         else if (hours <= 1)
-            ss << " Hour ";
+            ss << " Hora ";
         else
-            ss << " Hours ";
+            ss << " Horas ";
     }
     if(!hoursOnly)
     {
@@ -230,9 +230,9 @@ std::string secsToTimeString(time_t timeInSecs, bool shortText, bool hoursOnly)
             if (shortText)
                 ss << "m";
             else if (minutes == 1)
-                ss << " Minute ";
+                ss << " Minuto ";
             else
-                ss << " Minutes ";
+                ss << " Minutos ";
         }
         if (secs || (!days && !hours && !minutes))
         {
@@ -240,9 +240,9 @@ std::string secsToTimeString(time_t timeInSecs, bool shortText, bool hoursOnly)
             if (shortText)
                 ss << "s";
             else if (secs <= 1)
-                ss << " Second.";
+                ss << " Segundo.";
             else
-                ss << " Seconds.";
+                ss << " Segundos.";
         }
     }
 
