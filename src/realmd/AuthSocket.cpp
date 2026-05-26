@@ -217,7 +217,7 @@ bool AuthSocket::IsAllowedLocale(std::string const& locale)
     static char const* const kAllowedLocales[] =
     {
         "enUS", "enGB", "koKR", "frFR", "deDE",
-        "zhCN", "zhTW", "esES", "esMX", "ruRU"
+        "zhCN", "zhTW", "esES", "ptBR", "ruRU"
     };
 
     for (char const* loc : kAllowedLocales)
